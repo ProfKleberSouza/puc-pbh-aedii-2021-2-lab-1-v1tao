@@ -1,18 +1,14 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "functions.h"
 
-int main() {
+int main(int argc, char *argv[]){
+    char texto[100];
+    //problema com %string nao le uma linha apenas uma palavra 
+    fgets(texto, 100, stdin);
+    int i = 0; 
 
-    int a, b, s;
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+    numero_vogais(texto); 
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
-
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
-
-  return(0);
+    return 0;
 }

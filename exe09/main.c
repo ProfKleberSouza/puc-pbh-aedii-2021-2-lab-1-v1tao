@@ -1,18 +1,14 @@
 #include <stdio.h>
 #include "functions.h"
-
+#include <string.h>
 int main() {
 
-    int a, b, s;
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
-
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
-
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
-
-  return(0);
+    int m = 0;
+    int n = 0;
+    // ENTRADA DE DADOS
+    // m + n nao pode ser maior que 49  
+    scanf("%d %d", &m, &n);
+    // PROCESSAMENTO - EXECUTANDO A FUNCAO
+    placar_possiveis(m, n);
+    return 0;
 }

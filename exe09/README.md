@@ -36,3 +36,65 @@ AABA
 ABAA
 BAAA
 ```
+
+comecamos permutando a bolinha na pos[m - 1] $$$RESOLVIDO POR BUBBLE SORT
+**************
+ o o o - -
+ o o - o -      
+ o o - - o      |--> quando chegar no final, avancamos em 1 casa a bolinha na posicao [m - 2] --|
+**************                                                                                    
+ o - o o -      |--> antes {o o o - -} depois {o - o o -}                                     --|
+ o - o - o      
+**************  
+ o - - o o      |--> novamente #### como apos a transformacao temos 2 bolinhas ja no caso excecao
+**************                                          
+ - o o o -      |--> PONTO CRITICO  ######## movemos as 3 primeiras bolinhas ##### antes {o o o - -} depois {- o o o -}
+ - o o - o                              repetindo os passos
+ - o - o o      
+ - - o o o      |--> caso base, se placar_final == inverso_placar_inicial exita a funcao ## 
+ 
+ o o - -
+ o - o -
+ o - - o
+ - o o -
+ - o - o
+ - - o o
+ -
+ -
+ -
+ -
+ -
+ -
+ -
+ -
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+o o o - - -
+o o - o - -
+o o - - o -
+o o - - - o
+o - o o - -
+o - o - o -
+o - o - - o
+o - - o o -
+o - - o - o
+o - - - o o
+- o o o - -
+- o o - o -
+- o o - - o
+- o - o o -
+-

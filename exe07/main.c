@@ -1,18 +1,13 @@
 #include <stdio.h>
 #include "functions.h"
 
-int main() {
-
-    int a, b, s;
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
-
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
-
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
-
-  return(0);
+int main(int argc, char *argv[]){
+    int num1 = 0;
+    int num2 = 0;
+    
+    scanf("%d %d", &num1, &num2);   
+    
+    printf("%d", mdc(num1, num2));    
+ 
+    return 0;
 }

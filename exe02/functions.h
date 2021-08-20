@@ -1,2 +1,3 @@
 
-int somar(int n1, int n2);
+int menor_recursivo(int v[], int n, int menor);
+int menor(int v[], int n);
